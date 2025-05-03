@@ -30,6 +30,8 @@ const consultationRouter = require("./routes/Consultation");
 
 app.use("/student",studentRouter);
 app.use("/consultation", consultationRouter);
+app.use('/api/invoices', require('./Routes/invoiceRoutes'));
+
 
 // Start the server
 app.listen(PORT, () => {
