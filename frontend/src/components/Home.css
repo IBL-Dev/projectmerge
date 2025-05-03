@@ -1,0 +1,58 @@
+/* Home Page Styling Enhancements */
+.hero-section {
+    position: relative;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    overflow: hidden;
+}
+
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.9) 0%, rgba(37, 117, 252, 0.9) 100%);
+    opacity: 0.9;
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.scale-105 {
+    transform: scale(1.05);
+}
+
+.card {
+    overflow: hidden;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.expertise-tags .badge {
+    transition: all 0.3s ease;
+}
+
+.expertise-tags .badge:hover {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 1rem !important;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
