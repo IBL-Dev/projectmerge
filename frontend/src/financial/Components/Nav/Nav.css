@@ -1,0 +1,143 @@
+/* Main Layout */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    background-color: #343a40;
+    color: white;
+    width: 280px;
+    min-height: 100vh;
+    transition: all 0.3s;
+  }
+  
+  .sidebar.collapsed {
+    width: 80px;
+  }
+  
+  .sidebar-profile {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-info.hidden {
+    display: none;
+  }
+  
+  .logout-btn button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  
+  .sidebar-title {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+  
+  .sidebar-title.hidden {
+    display: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    width: 100%;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 20px;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+  
+  .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .nav-link i {
+    margin-right: 0.5rem;
+  }
+  
+  .link-text.hidden {
+    display: none;
+  }
+  
+  /* Content Area Styles */
+  .content-area {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .top-navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  .sidebar-toggle {
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  
+  
+  /* Main Content Styles */
+
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 80px;
+    }
+    
+    .sidebar:not(.collapsed) {
+      width: 280px;
+      position: absolute;
+      z-index: 1000;
+      height: 100vh;
+    }
+    
+    .profile-info, .sidebar-title, .link-text {
+      display: none;
+    }
+    
+    .sidebar:not(.collapsed) .profile-info,
+    .sidebar:not(.collapsed) .sidebar-title,
+    .sidebar:not(.collapsed) .link-text {
+      display: block;
+    }
+  }

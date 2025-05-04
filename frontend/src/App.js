@@ -15,6 +15,13 @@ import Sakila from './components/Sakila';
 import Praveen from './components/Praveen';
 import VeterinaryRecordForm from './components/kk'; 
 import AdminDashboard from './components/adminDashboard';
+import Overview from './financial/Components/Overview/Overview';
+import Invoice from './financial/Components/Invoice/Invoice';
+import Cpayment from './financial//Components/Cpayment/Cpayment';
+import Ppayment from './financial/Components/Ppayment/Ppayment';
+import Refunds from './financial/Components/Refunds/Refunds';
+import NewInvoice from './financial/Components/Invoice/NewInvoice/NewInvoice';
+import Client from './financial/Components/client';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  
 
 
@@ -38,6 +45,14 @@ function App() {
           <Route path="/praveen" element={<Praveen />} />
           <Route path="/veterinary-records/form" element={<VeterinaryRecordForm />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/" element={<Overview />} />
+      <Route path="/overview" element={<Overview />} />
+      <Route path="/invoice" element={<Invoice />} />
+      <Route path="/cpayment" element={<Cpayment />} />
+      <Route path="/ppayment" element={<Ppayment />} />
+      <Route path="/refunds" element={<Refunds />} />
+      <Route path="/ninvoice" element={<NewInvoice />} />
+      <Route path="/client" element={<Client />} />
           
         </Routes>
         <Footer />
