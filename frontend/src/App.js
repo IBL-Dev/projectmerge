@@ -23,6 +23,10 @@ import Ppayment from './financial/Components/Ppayment/Ppayment';
 import Refunds from './financial/Components/Refunds/Refunds';
 import NewInvoice from './financial/Components/Invoice/NewInvoice/NewInvoice';
 import Client from './financial/Components/client';
+import SignIn from "./usermanagement/components/login/index"; 
+import Signup from "./usermanagement/components/register/index";
+
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  
 
 
@@ -54,6 +58,10 @@ function App() {
       <Route path="/refunds" element={<Refunds />} />
       <Route path="/ninvoice" element={<NewInvoice />} />
       <Route path="/client" element={<Client />} />
+      
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/signup" element={<Signup />} />
+
           
         </Routes>
         <Footer />
