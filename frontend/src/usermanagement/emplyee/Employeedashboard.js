@@ -25,7 +25,7 @@ function Employeedashboard() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:3000/api/leaves/statuscounts")
+      .get("http://localhost:8070/api/leaves/statuscounts")
       .then((response) => {
         setStatusCounts(response.data);
         setLoading(false);
@@ -41,7 +41,7 @@ function Employeedashboard() {
     try {
       setLoading(true);
       const data = await axios.get(
-        "http://localhost:3000/api/leaves/getallleaves"
+        "http://localhost:8070/api/leaves/getallleaves"
       );
       setapproveleaves(data.data);
       setLoading(false);
@@ -76,7 +76,7 @@ function Employeedashboard() {
     try {
       setLoading(true);
       const response = await axios.get(
-        "http://localhost:3000/api/users/getallusers"
+        "http://localhost:8070/api/users/getallusers"
       );
       setUsers(response.data);
       setLoading(false);

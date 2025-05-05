@@ -31,7 +31,7 @@ function Employeeprofiledashboard() {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/api/leaves/leaverequestcounts/${userId}`
+        `http://localhost:8070/api/leaves/leaverequestcounts/${userId}`
       );
       const data = await response.json();
       console.log("API response:", data);
@@ -52,7 +52,7 @@ function Employeeprofiledashboard() {
       const currentUser = JSON.parse(localStorage.getItem("currentuser"));
 
       const response = await axios.post(
-        "http://localhost:3000/api/attendanceIn/mark_in",
+        "http://localhost:8070/api/attendanceIn/mark_in",
         {
           userid: currentUser._id,
           intime: currentTime.toLocaleTimeString(),
@@ -79,7 +79,7 @@ function Employeeprofiledashboard() {
       const currentUser = JSON.parse(localStorage.getItem("currentuser"));
 
       const response = await axios.post(
-        "http://localhost:3000/api/attendanceOut/mark_out",
+        "http://localhost:8070/api/attendanceOut/mark_out",
         {
           userid: currentUser._id,
           outtime: currentTime.toLocaleTimeString(),
