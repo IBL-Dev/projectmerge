@@ -200,9 +200,11 @@ const InvoiceManagement = () => {
         </div>
         <div className="summary-text">
           <span className="summary-label">Total Amount:</span>
+         
           <span className="badge badge-square">${calculateTotal()}</span>
         </div>
-      </div>
+       
+        </div>
     </div>
   );
 };
