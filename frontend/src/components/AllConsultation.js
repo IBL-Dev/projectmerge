@@ -64,7 +64,7 @@ export default function AllConsultations() {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this consultation?")) {
       try {
-        await axios.delete(`http://localhost:5000/consultation/delete/${id}`);
+        await axios.delete(`http://localhost:8070/consultation/delete/${id}`);
         setConsultations(consultations.filter(consultation => consultation._id !== id));
       } catch (err) {
         console.error("Error deleting consultation:", err);
