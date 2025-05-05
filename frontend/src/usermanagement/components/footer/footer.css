@@ -1,0 +1,69 @@
+/* Footer Styling Enhancements */
+footer {
+    background-color: #121212 !important;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Social Icons */
+  .social-icon {
+    color: #ffffff;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    color: #007bff;
+  }
+  
+  /* Product and Useful Links */
+  .product-link,
+  .useful-link {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .product-link::after,
+  .useful-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: #007bff;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .product-link:hover::after,
+  .useful-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .product-link:hover,
+  .useful-link:hover {
+    color: #007bff !important;
+  }
+  
+  /* Copyright Link */
+  .copyright-link {
+    color: #007bff !important;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .copyright-link:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    footer .row > div {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
