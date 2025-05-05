@@ -5,7 +5,7 @@ import "chart.js/auto"; // Import Chart.js library
 import Adminnavbar from "./component/Adminnavbar";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import Loader from "../../components/header/Loader";
+import Loader from "../components/header/Loader";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Tag } from "antd";

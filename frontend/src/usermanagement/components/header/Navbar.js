@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import logo from './../header/logo.png';
+import logo from '../header/logo.png';
 
 
 function Navbar() {
@@ -16,7 +16,7 @@ function Navbar() {
   function Logout() {
     localStorage.removeItem("currentuser");
     localStorage.removeItem("user:detail");
-    window.location.href = "/login";
+    window.location.href = "/signin";
   }
 
   return (

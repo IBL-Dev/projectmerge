@@ -34,7 +34,7 @@ function Allusers() {
     try {
       setLoading(true);
       const data = await axios.get(
-        "http://localhost:3000/api/users/getallusers"
+        "http://localhost:8070/api/users/getallusers"
       );
       setusers(data.data);
       setduplicateusers(data.data);
@@ -104,7 +104,7 @@ function Allusers() {
       try {
         setLoading(true);
         const result = await axios.post(
-          "http://localhost:3000/api/users/register",
+          "http://localhost:8070/api/users/register",
           user
         );
 
@@ -140,7 +140,7 @@ function Allusers() {
       });
 
       if (confirmed.isConfirmed) {
-        await axios.delete(`http://localhost:3000/api/users/delete/${id}`);
+        await axios.delete(`http://localhost:8070/api/users/delete/${id}`);
         fetchData();
         Swal.fire({
           icon: "success",

@@ -4,7 +4,7 @@ import { LuLayoutDashboard } from "react-icons/lu";
 import { GiExitDoor } from "react-icons/gi";
 import { FaUsers } from "react-icons/fa";
 import { FaUserClock } from "react-icons/fa6";
-import Navbar from "../../../components/header/Navbar";
+import Navbar from "../../components/header/Navbar";
 
 // import logo from "../../../Images/logo.png";
 

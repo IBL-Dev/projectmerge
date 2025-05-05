@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FaPencilAlt } from "react-icons/fa";
-import Loader from "../../components/header/Loader";
+import Loader from "../components/header/Loader";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

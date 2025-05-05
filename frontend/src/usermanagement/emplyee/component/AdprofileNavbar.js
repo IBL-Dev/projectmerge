@@ -4,9 +4,9 @@ import { LuLayoutDashboard } from "react-icons/lu";
 import { GiExitDoor } from "react-icons/gi";
 import { CgProfile } from "react-icons/cg";
 import { FaArrowCircleLeft } from "react-icons/fa";
-import Navbar from "../../../components/header/Navbar";
+import Navbar from "../../components/header/Navbar";
 
-import logo from "./../../../components/header/logo.png";
+import logo from "../../components/header/logo.png";
 
 function AdprofileNavbar() {
   const location = useLocation();

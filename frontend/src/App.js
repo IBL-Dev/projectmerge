@@ -26,6 +26,16 @@ import Client from './financial/Components/client';
 import SignIn from "./usermanagement/components/login/index"; 
 import Signup from "./usermanagement/components/register/index";
 import Allusers from "./usermanagement/emplyee/Allusers";
+import Edidemployeeprofile from "./usermanagement/emplyee/Edidemployeeprofile";
+import Userupdate from "./usermanagement/emplyee/Userupdate";
+import Euserprofile from "./usermanagement/emplyee/Euserprofile";
+import Employeedashboard from "./usermanagement/emplyee/Employeedashboard";
+import Homepage from "./usermanagement/components/home/index";
+
+
+
+
+
 
 
 
@@ -63,6 +73,15 @@ function App() {
       
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/e_allusers" element={<Allusers />} />
+      <Route path="/e_editprofile/:uid" element={<Edidemployeeprofile/>}/>
+      <Route path="/e_updates/:userid" element={<Userupdate/>}/>
+      <Route path="e_userprofile/:empid" element={<Euserprofile/>}/>
+      <Route path="/employeeDashboard" element={<Employeedashboard/>}/>
+      <Route path="/employeehome" element={<Homepage/>}/>
+
+
+
 
           
         </Routes>

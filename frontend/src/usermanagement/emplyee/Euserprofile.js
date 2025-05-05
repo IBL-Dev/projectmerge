@@ -5,7 +5,7 @@ import { FaEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useParams } from "react-router-dom";
-import Loader from "../../components/header/Loader";
+import Loader from "../components/header/Loader";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 

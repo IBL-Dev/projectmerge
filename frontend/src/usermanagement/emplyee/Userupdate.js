@@ -76,7 +76,7 @@ const Userupdate = () => {
     const fetchUserData = async () => {
       try {
         setLoading(true);
-        const response = await axios.post(`http://localhost:3000/api/users/getuser/${userid}`);
+        const response = await axios.post(`http://localhost:8070/api/users/getuser/${userid}`);
         const { user } = response.data;
         
         setUserData({
@@ -162,7 +162,7 @@ const Userupdate = () => {
     try {
       setLoading(true);
       await axios.put(
-        `http://localhost:3000/api/users/updateuser/${userid}`,
+        `http://localhost:8070/api/users/updateuser/${userid}`,
         {
           fullName: userData.fullName,
           email: userData.email,
