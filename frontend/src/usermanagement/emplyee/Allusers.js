@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 import "jspdf-autotable";
 import autoTable from 'jspdf-autotable';
 import { useNavigate } from "react-router-dom";
-import logo from "../../components/header/logo.png";
+import logo from "../components/header/logo.png";
  
 // jsPDF and its plugins
 

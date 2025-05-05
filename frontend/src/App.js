@@ -25,6 +25,8 @@ import NewInvoice from './financial/Components/Invoice/NewInvoice/NewInvoice';
 import Client from './financial/Components/client';
 import SignIn from "./usermanagement/components/login/index"; 
 import Signup from "./usermanagement/components/register/index";
+import Allusers from "./usermanagement/emplyee/Allusers";
+
 
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";  
