@@ -28,12 +28,13 @@ mongoose.connect(URL)
 const studentRouter = require("./routes/students");
 const consultationRouter = require("./routes/Consultation");
 const usersRoute = require("./routes/usersRoute");
+const projectRoutes = require('./routes/ProjectRoute');
 
 app.use("/student",studentRouter);
 app.use("/consultation", consultationRouter);
 app.use('/api/invoices', require('./Routes/invoiceRoutes'));
 app.use("/api/users", usersRoute);
-
+app.use('/projects', projectRoutes);
 
 // Start the server
 app.listen(PORT, () => {
