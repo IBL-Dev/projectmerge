@@ -1,0 +1,48 @@
+/* Custom Navy Blue Color Palette */
+:root {
+  --bs-primary: #1A2B47;  /* Deep Navy Blue */
+  --bs-primary-rgb: 26, 43, 71;
+  --bs-secondary: #4A6AA0; /* Lighter Navy */
+  --bs-light: #F4F6F9;    /* Soft Light Background */
+}
+
+/* Custom Typography */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #2C3E50;
+}
+
+/* Enhanced Card Styles */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(var(--bs-primary-rgb), 0.175) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+}
+
+/* Custom Button Styles */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.bg-primary {
+  background: linear-gradient(135deg, #1A2B47 0%, #4A6AA0 100%) !important;
+}
