@@ -33,6 +33,20 @@ import Employeedashboard from "./usermanagement/emplyee/Employeedashboard";
 import Homepage from "./usermanagement/components/home/index";
 
 
+import TalentPoolDashboard from "../src/assisment/Components/TalentPool/TalentPoolDashboard";
+import DashboardHome from "../src/assisment/Components/TalentPool/DashboardHome";
+import AddApp from "../src/assisment/Components/ApplicantFeatures/AddApp/AddApp";
+import ApplicantDetails from "../src/assisment/Components/ApplicantDetails/ApplicantDetails";
+import JobList from "../src/assisment/Components/Jobs/JobList";
+import NewJob from "../src/assisment/Components/Jobs/NewJob";
+import JobDetail from "../src/assisment/Components/Jobs/JobDetail";
+import PublicCareers from "../src/assisment/Components/Public/Careers/PublicCareers";
+import PublicHeader from "../src/assisment/Components/Public/Layout/PublicHeader";
+import PublicJobDetail from "../src/assisment/Components/Public/Careers/PublicJobDetails";
+// import Login from "../src/assisment/Components/Auth/Login";
+import AppSuccessful from "../src/assisment/Components/Public/Careers/AppSuccessful";
+import AssignmentManager from "../src/assisment/Components/TalentPool/AssignmentManager";
+import ApplicationReview from "../src/assisment/Components/TalentPool/ApplicationReview";
 
 
 
@@ -82,10 +96,75 @@ function App() {
 
 
 
+         {/* Public Routes */}
+         <Route
+        path="/assignment"
+        element={
+          <>
+          
+            <PublicCareers />
+          </>
+        }
+      />
+
+      {/* Public Job Details Route */}
+      <Route
+        path="/jobs/:id"
+        element={
+          <>
+            <PublicHeader />
+            <PublicJobDetail />
+          </>
+        }
+      />
+
+      {/* Public Application Route */}
+      <Route
+        path="/apply/:jobId"
+        element={
+          <>
+            <PublicHeader />
+            <AddApp />
+          </>
+        }
+      />
+
+      {/* <Route path="/login" element={<Login />} /> */}
+
+      {/* Talent Pool Dashboard Routes */}
+      <Route
+        path="/dashboard"
+        element={
+         
+            <TalentPoolDashboard />
+         
+        }
+      >
+        <Route index element={<DashboardHome />} />
+        <Route path="assignments" element={<AssignmentManager />} />
+        <Route path="addapp" element={<AddApp />} />
+        <Route path="applicants" element={<ApplicantDetails />} />
+        <Route path="applicants/:id" element={<ApplicationReview />} />
+        <Route path="jobs" element={<JobList />} />
+        <Route path="jobs/create" element={<NewJob />} />
+        <Route path="jobs/edit/:id" element={<NewJob />} />
+        <Route path="jobs/:id" element={<JobDetail />} />
+      </Route>
+
+      {/* Application Success Route */}
+      <Route
+        path="/application-success"
+        element={
+          <>
+            <PublicHeader />
+            <AppSuccessful />
+          </>
+        }
+      />
 
           
         </Routes>
-        <Footer />
+        <Footer />        
       </div>
     </Router>
   );

@@ -1,0 +1,38 @@
+/* Custom background color for the navbar */
+.bg-navy {
+  background-color: black; /* Navy blue color */
+}
+
+/* Optional: Change the text color of navbar links for better contrast */
+.navbar-nav .nav-link {
+  color: white !important; /* White text color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: lightgray !important; /* Light gray text color on hover */
+}
+
+/* Optional: Change the color of the dropdown menu */
+.dropdown-menu {
+  background-color: navy; /* Navy blue background */
+}
+
+.dropdown-item {
+  color: white !important; /* White text color */
+}
+
+.dropdown-item:hover {
+  background-color: darkblue; /* Darker blue on hover */
+  color: white !important;
+}
+
+/* Optional: Change the color of the search button */
+.btn-outline-light {
+  color: white; /* White text color */
+  border-color: white; /* White border color */
+}
+
+.btn-outline-light:hover {
+  background-color: white; /* White background on hover */
+  color: navy; /* Navy blue text color on hover */
+}

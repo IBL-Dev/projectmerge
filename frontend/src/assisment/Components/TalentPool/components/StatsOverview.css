@@ -1,0 +1,37 @@
+.stats-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    border-left: 4px solid #0a192f;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    color: #0a192f;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.stat-card.total { border-color: #0a192f; }
+.stat-card.shortlisted { border-color: #2ecc71; }
+.stat-card.under-review { border-color: #3498db; }
+.stat-card.rejected { border-color: #e74c3c; }
+.stat-card.completed { border-color: #9b59b6; } 
