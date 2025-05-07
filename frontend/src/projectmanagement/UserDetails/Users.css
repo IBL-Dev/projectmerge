@@ -1,0 +1,57 @@
+/* Add this to your CSS file (e.g., styles.css) */
+.container.py-4 {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(6, 10, 223, 0.1);
+    padding: 2rem !important; /* Override Bootstrap's py-4 with more precise control */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #61666a; /* Light border */
+  }
+  
+  /* For the header section */
+  .container.py-4 .card-header {
+    background-color: #719fe4; /* Navy blue */
+    color: white;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0 !important;
+    padding: 1rem 1.5rem;
+  }
+  
+  /* For the cards inside */
+  .container.py-4 .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  .container.py-4 .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(207, 30, 30, 0.1);
+  }
+  
+  /* Button styling */
+  .container.py-4 .btn-primary {
+    background-color: #0d6efd; /* Bootstrap primary blue */
+    border-color: #0d6efd;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+  }
+  
+  .container.py-4 .btn-primary:hover {
+    background-color: #666f7c;
+    border-color: #0a58ca;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container.py-4 {
+      padding: 1.5rem !important;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+  
+  }
+
+  

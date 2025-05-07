@@ -32,6 +32,12 @@ import Euserprofile from "./usermanagement/emplyee/Euserprofile";
 import Employeedashboard from "./usermanagement/emplyee/Employeedashboard";
 import Homepage from "./usermanagement/components/home/index";
 
+import AddUser from "../src/projectmanagement/AddUser/AddUser";
+import UpdateUser from "../src/projectmanagement/UpdateUser/UpdateUser";
+import Dashboard from "../src/projectmanagement/Dashbord/Dashboard";
+import ViewProject from "../src/projectmanagement/viewProject/ViewProject"; // Add this import
+import ProjectDetails  from "../src/projectmanagement/viewProject/ViewProject";
+import Users from "../src/projectmanagement/UserDetails/Users";
 
 import TalentPoolDashboard from "../src/assisment/Components/TalentPool/TalentPoolDashboard";
 import DashboardHome from "../src/assisment/Components/TalentPool/DashboardHome";
@@ -93,6 +99,14 @@ function App() {
       <Route path="e_userprofile/:empid" element={<Euserprofile/>}/>
       <Route path="/employeeDashboard" element={<Employeedashboard/>}/>
       <Route path="/employeehome" element={<Homepage/>}/>
+
+      <Route path="/addproject" element={<AddUser/>}/>
+      <Route path="/projectdetails" element={<Users/>}/>
+      <Route path="/projectdetails/:id" element={<UpdateUser/>}/>
+      <Route path="/update/:id" element={<UpdateUser/>}/>
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/project/:id" element={<ViewProject />} />
+      <Route path="/project-details" element={<ProjectDetails />} />
 
 
 

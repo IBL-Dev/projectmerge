@@ -46,6 +46,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 const studentRouter = require("./routes/students");
 const consultationRouter = require("./routes/Consultation");
 const usersRoute = require("./routes/usersRoute");
+
 const router = require("./routes/ApplicantRoutes");
 const jobRoutes = require("./routes/JobRoutes");
 const dashboardRoutes = require("./routes/dashboardRoutes");
@@ -54,10 +55,14 @@ const assignmentRoutes = require("./routes/AssignmentRoutes");
 
 
 
+const projectRoutes = require('./routes/ProjectRoute');
+
+
 app.use("/student",studentRouter);
 app.use("/consultation", consultationRouter);
 app.use('/api/invoices', require('./Routes/invoiceRoutes'));
 app.use("/api/users", usersRoute);
+
 
 app.use("/applicants", router);
 app.use("/jobs", jobRoutes);
@@ -73,6 +78,9 @@ app.use((err, req, res, next) => {
     error: err.message,
   });
 });
+
+
+app.use('/projects', projectRoutes);
 
 
 // Start the server
